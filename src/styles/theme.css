@@ -1,0 +1,46 @@
+:root {
+  --ion-font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+/* tiny utility for spacing (not Tailwind, just a couple of helpers) */
+.mb-2 { margin-bottom: 0.5rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: .5rem; }
+.text-center { text-align: center; }
+.text-red-600 { color: #dc2626; }
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.success {
+  --background: #28a745;
+  --background-hover: #218838;
+  --background-activated: #1e7e34;
+  --background-focused: #218838;
+  color: white;
+  font-weight: bold;
+}
+
+/* only force white text for Approved */
+ion-badge[color="success"] {
+  color: white !important;
+  font-weight: bold;
+}
+
+@media (max-width: 420px) {
+  .status-badge {
+    min-width: 80px;
+  }
+}
